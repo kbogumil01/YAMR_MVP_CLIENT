@@ -1,0 +1,86 @@
+.quiz {
+  min-height: 300px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+  position: relative; 
+}
+
+.question, .image-selection, .rating, .result {
+  margin: 20px;
+  width: 100%; 
+}
+
+.button {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+}
+
+.images img {
+  width: 250px;
+  height: 250px;
+  margin: 250px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  object-fit: cover; /* Dodane */
+  transition: border-color 0.3s ease;
+}
+
+.images img:hover {
+  border-color: #007bff;
+}
+
+.question-container {
+  margin: 20px;
+  width: 100%; 
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap; /* Zapobiega przepełnieniu w przypadku wielu przycisków */
+  justify-content: center;
+  gap: 10px; /* Dodanie odstępu między przyciskami */
+}
+
+.MuiButton-root { /* Przesłanie stylów dla przycisków Material-UI */
+  margin: 10px; /* Dodatkowy margines dla przycisków */
+  border-radius: 5px; /* Zaokrąglenie rogów */
+  padding: 15px 30px; /* Zwiększenie paddingu dla przycisków */
+  font-size: 16px; /* Zwiększenie rozmiaru czcionki */
+}
+
+.MuiButton-containedPrimary {
+  background-color: #007bff; /* Kolor tła dla przycisków */
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #0056b3; /* Kolor tła po najechaniu myszką */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures any overflow is hidden */
+}
+
+.video-element {
+  width: 640px; /* Fixed width */
+  height: 360px; /* Fixed height */
+  object-fit: cover; /* Ensures the video covers the container */
+}
